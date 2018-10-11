@@ -13,3 +13,7 @@ io.on('connection', (socket) => {
         io.emit('RECIEVE_MESSAGE', data);
     })
 })
+
+app.get('/', (req, res) => {
+    res.send('Yeet');
+})

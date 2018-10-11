@@ -10,7 +10,7 @@ class Chat extends Component {
             message: '',
             messages: []
         }
-        this.socket = io('localhost:8080');
+        this.socket = io('192.168.0.11:8080');
         this.socket.on('RECIEVE_MESSAGE', (data) => {
             addMessage(data);
         });
